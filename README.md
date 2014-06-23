@@ -1,6 +1,6 @@
 **AsteriskCDReporter**
 ==================
-Its a python script that collects caller ID, call time, call source and destination, disposition and duration from CDR database of all outbound and inbound calls from and to PSTN network. After arranging the data it sends a report of the calls and sends a tabulated email to a user defined email address.
+Its a python script that collects caller ID, call time, call source and destination, disposition and duration from CDR database of all outbound and inbound calls from and to PSTN network. After arranging the data it sends a report of the calls in a tabulated email to a user defined email address.
 
 The script uses **`MySQLdb`** to extract data from the CDR database and uses [**`HTML.py`**][1] to tabualte the data in an HTML table.
 

@@ -31,7 +31,7 @@ from email.MIMEText import MIMEText
 from email.MIMEMultipart import MIMEMultipart
 
 table = []
-#records = ""
+records = ""
 
 def appendtable(count):
   global records

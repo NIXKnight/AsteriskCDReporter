@@ -1,13 +1,13 @@
 **AsteriskCDReporter**
 ==================
-Its a python script that collects caller ID, call time, call source and destination, disposition and duration from CDR database of all outbound and inbound calls from and to PSTN network. After arranging the data it sends a report of the calls in a tabulated email to a user defined email address.
+Its a python script that collects caller ID, call time, call source and destination, disposition and duration from CDR database of all outbound and inbound calls from and to PSTN network. After arranging the data it sends a report of the calls and sends a tabulated email to a user defined email address.
 
 The script uses **`MySQLdb`** to extract data from the CDR database and uses [**`HTML.py`**][1] to tabualte the data in an HTML table.
 
 **`smtplib`** is used to send email.
 **Dependencies**
 ------------
-Apart from standard python installation, the script requires [**`HTML.py`**][1] which is already included and **`MySQLdb`** library. Install as follows:
+Apart from standard python installation, the script requires [**`HTML.py`**][1] which is already included and **`MySQLdb`** library. You can install **`MySQLdb`** as follows:
 
 **Ubuntu/Debian:**
 
@@ -41,12 +41,13 @@ At the moment the script is hard-coded to do things such as:
 -------
 
 [Saad Ali][2] - Linux/BSD Admin
+[Philippe Lagadec][1] - Author of HTML.py
 
 **License**
 -------
 
-The script is licensed under MIT License
-
+ - The script **`AsteriskCDReporter.py`** is licensed under MIT License.
+ - **`HTML.py`** is licensed under CeCILL license.
 
   [1]: http://www.decalage.info/python/html
   [2]: https://github.com/nixknight
